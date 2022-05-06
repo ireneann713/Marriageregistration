@@ -1,0 +1,104 @@
+{% extends 'base.html' %} {% block body %}
+<h2>
+    <i class="fa fa-certificate "></i> Apply for Certificate
+</h2>
+<br/>
+<form enctype="multipart/form-data" method="post">{% csrf_token %}
+
+    <div class="row">
+        <div class="col-md-1"></div>
+
+        <div class="col-md-5">
+
+
+
+            <div class="col-md-5">
+                <label for="name">Name of Man</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="col-md-5">
+                <label for="name">Name of woman</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+
+            <div class="col-md-3">
+                <label for="age">Age of man</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+
+
+            <div class="col-md-5">
+                <label for="age">Age of woman</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+
+                <label for="age">Specify Age proof</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+                <label for="age">Permanent Address of man</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+                <label for="age">Specify Address proof</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+                <label for="age">Permanent Address of Woman</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+                <label for="age">Specify Address Proof</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+                <label for="age">Aadhar Card Number of Man</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <div class="col-md-5">
+                <label for="age">Aadhar Card Number of Woman</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+
+
+            <div class="col-md-5">
+                <label for="apple">Hindu Marriage Act</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+            <div>
+                <label for="apple">Christian  Marriage Act</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+            <div>
+                <label for="apple">Muslim Marriage  Act</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+            <div>
+                <label for="apple">Special Marriage Act</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+            <div>
+                <label for="apple">Court Marriage Act</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <label for="age">Name of witness1</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+        <div class="col-md-10">
+            <label for="age">Specify ID Proof of witness1</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+        <div class="col-md-5">
+            <label for="age">Name of witness2</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+        <div class="col-md-5">
+            <label for="age">Specify Address proof of witness2</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+
+
+        <button type="submit">Submit</button> {% endblock body %}
